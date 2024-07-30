@@ -79,6 +79,10 @@ class MainActivity : AppCompatActivity() {
 
 
         val btnPhoto = binding.btnPhoto
+        val btnCam = binding.butcam
+        val btnCamRoll = binding.butcamRoll
+
+        btnCam.isActivated = false
 
         btnPhoto.setOnClickListener{
             takePhoto()
@@ -239,6 +243,10 @@ class MainActivity : AppCompatActivity() {
 
     fun viewPicPage(view: View){
         val intent = Intent(this,viewPic::class.java)
+        startActivity(intent)
+    }
+    fun viewCamPage(view: View){
+        val intent = Intent(this,MainActivity::class.java)
         startActivity(intent)
     }
 

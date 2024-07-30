@@ -8,24 +8,40 @@
     tools:context=".MainActivity">
 
     <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/previewView"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"></androidx.camera.view.PreviewView>
 
-     ></androidx.camera.view.PreviewView>
-
-        <Button
+    <Button
             android:id="@+id/butcamRoll"
-            android:layout_width="wrap_content"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:text="pictures"
-            android:layout_marginTop="660dp"
+            android:layout_marginBottom="100dp"
             android:backgroundTint="@color/red"
             android:layout_marginLeft="270dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/previewView"
             android:onClick="viewPicPage"
-            />
+            android:alpha="0.8"
+        />
+
+    <Button
+        android:id="@+id/butcam"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="100dp"
+        android:alpha="0.8"
+        android:backgroundTint="@color/red"
+        android:onClick="viewCamPage"
+        android:text="camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previewView" />
 
 
     <Button
@@ -35,11 +51,12 @@
             android:text=""
             android:backgroundTintMode="add"
             android:backgroundTint="@color/red"
-            android:layout_marginTop="620dp"
+            android:layout_marginBottom="150dp"
             android:layout_marginLeft="172dp"
             android:alpha="0.6"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previewView"/>
 
 
 
