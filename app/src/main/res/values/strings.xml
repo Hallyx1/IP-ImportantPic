@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ImportantPictures</string>
+    <string name="title_activity_view_pic">viewPic</string>
+    <string name="title_activity_view_pic_test">viewPicTest</string>
+</resources>
