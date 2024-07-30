@@ -6,4 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".viewPic">
 
+    <Button
+        android:id="@+id/butcam"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="30dp"
+        android:alpha="0.8"
+        android:backgroundTint="@color/red"
+        android:onClick="viewCamPage"
+        android:text="camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+        android:id="@+id/butcamRoll"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="pictures"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/red"
+        android:layout_marginLeft="270dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="viewPicPage"
+        android:alpha="0.8"
+        />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

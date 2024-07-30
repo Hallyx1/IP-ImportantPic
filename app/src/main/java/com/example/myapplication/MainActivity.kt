@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
         val btnCam = binding.butcam
         val btnCamRoll = binding.butcamRoll
 
-        btnCam.isActivated = false
+        btnCam.isClickable= false
 
         btnPhoto.setOnClickListener{
             takePhoto()
