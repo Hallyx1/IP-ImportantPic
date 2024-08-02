@@ -201,6 +201,8 @@ class MainActivity : AppCompatActivity() {
                     Log.d("Debug", "takePhoto() completed")
 
                     //afficher la photo prise en trouvant comment changer le camview
+                    //voir comment faire
+
 
 
 
