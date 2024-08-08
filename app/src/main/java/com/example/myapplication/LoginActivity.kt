@@ -37,6 +37,7 @@ class LoginActivity : AppCompatActivity() {
                         val intent = Intent(this,MainActivity::class.java)
                         startActivity(intent)
                     }else{
+                        //didnt work
                         Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
                     }
                 }
